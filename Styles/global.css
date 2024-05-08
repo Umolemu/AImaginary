@@ -13,6 +13,8 @@ body {
     position: relative; 
 }
 
+a { text-decoration: none;  }
+
 li { list-style: none; }
 
 main, footer {
@@ -23,11 +25,15 @@ main, footer {
     padding-right: 20px;
 }
 
-main {
+main, section {
     display: flex;
     flex-direction: column;
     align-items: center;
     
+}
+
+section {
+    margin-top: 20rem;
 }
 
 
@@ -44,6 +50,7 @@ main {
     -webkit-background-clip: text;
     background-clip: text;
     margin-top: 1rem;
+    margin-bottom: 0;
 }
 
 .hero-container {
@@ -52,6 +59,7 @@ main {
     align-items: center;
     flex-direction: column;
     margin-top: 100px;
+    margin-bottom: 0;
 
 }
 
@@ -125,12 +133,23 @@ header img {
     width: 20px;
 }
 
+.Title-2 {
+    font-size: 64px;
+    padding: 0;
+    text-shadow: 0 1px rgba(0, 0, 0, .07);
+    -webkit-text-fill-color: transparent;
+    background-image: linear-gradient(145deg, #fff 65%, rgba(255, 255, 255, .43));
+    -webkit-background-clip: text;
+    background-clip: text;
+    margin-bottom: 0;
+}
+
 h2 {
     font-size: 32px;
     text-align: center;
     color: #fff;
     font-family: 'Satoshi-Black', sans-serif;
-    margin-top: 300px
+
 
 }
 
@@ -154,6 +173,68 @@ h2 {
 
 }
 
+.card {
+    background-color: #1b2735;
+    border: 1px solid rgba(255, 255, 255, .08);
+    border-radius: 25px;
+    padding: 32px;
+    position: relative;
+    overflow: hidden;  
+    cursor: pointer;
+    transform: matrix(1, 0, 0, 1, 0, 0);
+    transform-style: preserve-3d;
+    transition-behavior: normal;
+    transition-delay: 0s;
+    transition-duration: 0.2s;
+    transition-property: border-color;
+    transition-timing-function: ease;
+    width: fit-content
+}
+
+.card:hover {       
+    border-color: #818182;
+}
+
+.baby-node {
+    grid-area: span 1 / span 1 / span 1 / span 1;
+}
+
+.large-node {
+    grid-area: span 1 / span 2 / span 1 / span 2;
+}
+
+.card-heading {
+    margin-top: 0;
+    margin-bottom: 8px;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24px;
+    color: #fff;
+}
+
+.card-paragraph {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    color: #bdbdc0;
+}
+
+.grid-container {
+    z-index: 2;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    grid-template-rows: repeat(2, auto);
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-columns: 1fr;
+    padding-top: 56px;
+    display: grid;
+    position: relative;
+    
+}
+
+
 footer {
     display: flex;
     justify-content: space-between;
@@ -170,13 +251,19 @@ footer .products-container {
 
 footer .products-container a {
     color: #a9a9a9;
-    font-family: 'Satoshi-black', sans-serif;
+    font-family: 'Satoshi-light', sans-serif;
     margin-bottom: 32px;
     font-size: 16px;
     font-weight: 500;
-    line-height: 24px;
+    font-family: 'Satoshi-light', sans-serif;
+    font-size: 16px;
+    color: #bdbdc0;
+    transition: color .2s;
 
-    text-decoration: none;
+}
+
+footer .products-container a:hover {
+    color: #fff;
 }
 
 .footer-heading {
