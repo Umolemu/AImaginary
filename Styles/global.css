@@ -1,9 +1,5 @@
 @import url('satoshi.css');
 
-#logo{
-    display: hidden !important;
-    display: none !important;
-}
 html {
     height: 100%;
     width: 100%;
@@ -18,7 +14,6 @@ body {
 }
 
 a { text-decoration: none;  }
-
 li { list-style: none; }
 
 main, footer {
@@ -149,6 +144,7 @@ header img {
     width: 20px;
 }
 
+
 .Title-2 {
     font-size: 64px;
     padding: 0;
@@ -160,12 +156,37 @@ header img {
     margin-bottom: 0;
 }
 
+.title-3 {
+    font-size: 52px;
+    padding: 0;
+    margin-top: 5rem;
+    font-family: 'Satoshi-Black', sans-serif;
+    color: #fff;
+}
+
+blockquote {
+    font-size: 16px;
+    font-family: 'Satoshi-light', sans-serif;
+    color: #fff;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 32px;
+    line-height: 1.3;
+
+}
+
 h2 {
     font-size: 32px;
     text-align: center;
     color: #fff;
     font-family: 'Satoshi-Black', sans-serif;
+}
 
+h3 {
+    font-size: 24px;
+    text-align: center;
+    color: #fff;
+    font-family: 'Satoshi-Black', sans-serif;
 
 }
 
@@ -189,6 +210,7 @@ h2 {
 
 }
 
+
 .card {
     background-color: #1b2735;
     border: 1px solid rgba(255, 255, 255, .08);
@@ -204,7 +226,7 @@ h2 {
     transition-duration: 0.2s;
     transition-property: border-color;
     transition-timing-function: ease;
-    width: fit-content
+
 }
 
 .card:hover {       
@@ -226,6 +248,7 @@ h2 {
     font-weight: 600;
     line-height: 24px;
     color: #fff;
+    text-align: start !important;
 }
 
 .card-paragraph {
