@@ -35,8 +35,10 @@ As for the last part of the website stay tuned for the javascript as this part o
 
 # Images
 
-https://github.com/Umolemu/AImaginary/assets/129932295/de81228b-58fd-4343-aabb-c4a82ef161e6
 
-https://github.com/Umolemu/AImaginary/assets/129932295/c0d0aff1-1a64-4cbd-b984-04fe916938ee
+![image-1](https://github.com/Umolemu/AImaginary/assets/129932295/b656c5e9-95f8-4050-ac85-2c8503b68e46)
 
-https://github.com/Umolemu/AImaginary/assets/129932295/2b6d5072-c691-45d2-b03b-4442212b699e
+![image-2](https://github.com/Umolemu/AImaginary/assets/129932295/82a2ab7c-a999-4db5-9693-095d3e5a62f3)
+
+![image-3](https://github.com/Umolemu/AImaginary/assets/129932295/de73a998-29a1-4305-bf12-207fe14ec41b)
+
