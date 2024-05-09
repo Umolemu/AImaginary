@@ -34,6 +34,7 @@ This website took me about 1 week to complete.
 As for the last part of the website stay tuned for the javascript as this part only requred HTML and CSS. 
 
 #Images
+
 https://github.com/Umolemu/AImaginary/assets/129932295/de81228b-58fd-4343-aabb-c4a82ef161e6
 
 https://github.com/Umolemu/AImaginary/assets/129932295/c0d0aff1-1a64-4cbd-b984-04fe916938ee
