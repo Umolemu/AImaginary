@@ -33,7 +33,7 @@ This website took me about 1 week to complete.
 
 As for the last part of the website stay tuned for the javascript as this part only requred HTML and CSS. 
 
-#Images
+# Images
 
 https://github.com/Umolemu/AImaginary/assets/129932295/de81228b-58fd-4343-aabb-c4a82ef161e6
 
