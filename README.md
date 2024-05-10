@@ -1,3 +1,4 @@
+## Website is not mobile responsive just yet
 # AImaginary  
 Webpage can be located at **https://umolemu.github.io/AImaginary/** the site is live and running
 
