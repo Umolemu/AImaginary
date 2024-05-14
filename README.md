@@ -25,8 +25,8 @@ The repository contains all the files used to create the website and is public.
 Credit to the user josefinehelen for the 3D animation.
 Whose Instagram handle is @studio.jossan.
 
-This website is a mockup and is not intended for commercial use rather as a learning tool and to complete the 
-project requirements for the Web development module at IIE MSA.
+This website is a mockup and is not intended for commercial use rather as a learning tool and to complete a 
+project. 
 
 Currently this is one of my top designed websites and I am proud of the work I have done on it.
 
