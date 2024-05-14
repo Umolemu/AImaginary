@@ -36,6 +36,10 @@ main, section {
     margin-top: 30rem;
 }
 
+.margin-vertical-small {
+    margin-top: 8rem;
+}
+
 spline-viewer {
     width: 100%;
     height: 100%;
@@ -74,7 +78,7 @@ spline-viewer {
     margin-right: 5px;
 }
 
-header {
+.nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -83,17 +87,17 @@ header {
 
 }
 
-header nav ul {
+.nav nav ul {
     display: flex;
     
 }
 
-header nav ul li {
+.nav nav ul li {
     list-style: none;
     margin-right: 20px;
 }
 
-header nav ul li a {
+.nav nav ul li a {
     text-decoration: none;
     font-family: 'Satoshi-light', sans-serif;
     font-size: 16px;
@@ -106,12 +110,16 @@ header nav ul li a {
     
 }
 
-header nav ul li a:hover {
+.nav nav ul li a:hover {
     color: #fff;
 }
 
-header img {
+.nav img {
     width: 175px;
+}
+
+.mobile-nav {
+    display: none;
 }
 
 .button-main {
@@ -124,7 +132,7 @@ header img {
     border: 1px solid #FFFFFF14;
     border-radius: 32px;
     padding: 10px 16px;
-    background-color: #FFFFFF14;
+    background-color: rgba(0, 0, 0, .1);
     cursor: pointer;
     transform: matrix(1, 0, 0, 1, 0, 0);
     transform-style: preserve-3d;
@@ -133,7 +141,11 @@ header img {
     transition-duration: 0.2s;
     transition-property: border-color;
     transition-timing-function: ease;
-    width: fit-content
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
 }
 
 .button-main:hover {
@@ -175,6 +187,19 @@ blockquote {
 
 }
 
+.list-main {
+    font-size: 16px;
+    font-family: 'Satoshi-light', sans-serif;
+    color: #fff;
+    margin-top: 0;
+    margin-bottom: 32px;
+    line-height: 1.3;
+}
+
+.list-main li {
+    list-style: outside
+}
+
 h2 {
     font-size: 32px;
     text-align: center;
@@ -212,7 +237,7 @@ h3 {
 
 
 .card {
-    background-color: #1b2735;
+    background-color: rgba(0, 0, 0, .1);
     border: 1px solid rgba(255, 255, 255, .08);
     border-radius: 25px;
     padding: 32px;
@@ -226,7 +251,7 @@ h3 {
     transition-duration: 0.2s;
     transition-property: border-color;
     transition-timing-function: ease;
-
+    backdrop-filter: blur(12px);
 }
 
 .card:hover {       
@@ -308,6 +333,14 @@ footer .products-container a:hover {
     color: #fff;
 }
 
+.paragraph-bold-footer {
+    color: #bdbdc0;
+    font-family: 'Satoshi-black', sans-serif;
+    margin-bottom: 32px;
+    font-size: 22px;
+    font-weight: 500;
+}
+
 .footer-heading {
     color: #fff;
     font-family: 'Satoshi-Black', sans-serif;
@@ -316,4 +349,114 @@ footer .products-container a:hover {
     margin-bottom: 32px;
 }
 
+@media only screen and (max-width: 894px) {
+    
+    .hero-title {
+        font-size: 48px;
+        line-height: 52px;
+    }
+
+    .paragraph {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .Title-2 {
+        font-size: 48px;
+        padding: 0;
+        margin: 0;
+    }
+
+    .title-3 {
+        font-size: 36px;
+        padding: 0;
+        margin-top: 5rem;
+        text-align: center;
+    }
+
+    blockquote {
+        font-size: 14px;
+        line-height: 1.4;
+    }
+
+    .list-main {
+        font-size: 14px;
+        
+    }
+
+    .nav {
+        display: none;
+    }
+
+    .mobile-nav {
+        display: block;
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 20px;
+        margin: 20px 20px;
+        background-color: hsla(0, 0%, 100%, 0.08);
+        align-items: center;
+        border-radius: 64px;
+        border: 1px solid #FFFFFF14;
+        backdrop-filter: blur(16px);
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 100;   
+    }
+
+    .mobile-nav ul li {
+        display: none;
+    }
+
+    .mobile-nav img {
+        width: 30px;
+    }
+
+    .mobile-hamburger {
+        background-color: hsla(0, 0%, 100%, 0.1);
+        border: none;
+        border-radius: 100%;
+        padding: 12px;
+    }
+
+    .hero-container {
+        margin-top: 8rem;
+    }
+
+    .mobile-vertical {
+        margin-top: 4rem;
+    }
+
+    spline-viewer {
+        transform: translateY(10%);
+    }
+
+    .grid-container {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .card {
+        width: 80%;
+    }
+    
+    footer {
+        flex-direction: column;
+        margin-top: 5rem;
+    }
+
+}
+
+
+@media only screen and (max-width: 624px) {
+    spline-viewer {
+        transform: translateY(7%);
+    }
+}
+  
 
