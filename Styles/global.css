@@ -93,21 +93,17 @@ spline-viewer {
 }
 
 .nav nav ul li {
-    list-style: none;
     margin-right: 20px;
 }
 
 .nav nav ul li a {
-    text-decoration: none;
     font-family: 'Satoshi-light', sans-serif;
     font-size: 16px;
     color: #bdbdc0;
     letter-spacing: .2px;
     padding: 20px;
     font-weight: 500;
-    text-decoration: none;
     transition: color .2s;
-    
 }
 
 .nav nav ul li a:hover {
@@ -145,7 +141,6 @@ spline-viewer {
     display: flex;
     align-items: center;
     justify-content: center;
-
 }
 
 .button-main:hover {
@@ -155,7 +150,6 @@ spline-viewer {
 .button-main img {
     width: 20px;
 }
-
 
 .Title-2 {
     font-size: 64px;
@@ -212,7 +206,6 @@ h3 {
     text-align: center;
     color: #fff;
     font-family: 'Satoshi-Black', sans-serif;
-
 }
 
 .paragraph {
@@ -234,7 +227,6 @@ h3 {
     font-weight: 500;
 
 }
-
 
 .card {
     background-color: rgba(0, 0, 0, .1);
@@ -300,7 +292,6 @@ h3 {
     grid-row-gap: 20px;
     
 }
-
 
 footer {
     display: flex;
