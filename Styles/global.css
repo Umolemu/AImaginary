@@ -421,7 +421,8 @@ footer .products-container a:hover {
     }
 
     spline-viewer {
-        transform: translateY(10%);
+        transform: translateY(0%);
+        margin-top: 4em;
     }
 
     .grid-container {
@@ -446,7 +447,8 @@ footer .products-container a:hover {
 
 @media only screen and (max-width: 624px) {
     spline-viewer {
-        transform: translateY(7%);
+        transform: translateY(0%);
+        margin-top: 2em;
     }
 }
   
