@@ -51,14 +51,17 @@ As for the last part of the website stay tuned for the javascript as this part o
 </head>
     
 <body>
+    <!--Background Animation Start-->
     <div class="background">
         <div id="stars"></div>
         <div id="stars2"></div>
         <div id="stars3"></div>
     </div>
+    <!--Background Animation End-->
 
+    <!--Hero Section Start-->
     <div class="hero-main">
-
+        <!--Main Navigation Start-->
         <div class="hero-main nav">
             <a href="/AImaginary/index.html"><img src="/AImaginary/Public/logo-full-white.png" alt="AImaginary logo"></a>
             <nav>
@@ -71,34 +74,39 @@ As for the last part of the website stay tuned for the javascript as this part o
                 </ul>
             </nav>
         </div>
+        <!--Main Navigation End-->
 
-        <div class="hero-main mobile-nav">
-            <a href="/AImaginary/index.html"><img src="/AImaginary/Public/logo-white.png" alt="AImaginary logo"></a>
-            <nav>
-                <ul>
-                    <li><a href="/Main/automator.html">Automator</a></li>
-                    <li><a href="/Main/manipulator.html">Manipulator</a></li>
-                    <li><a href="/Main/verbalGenius.html">VerbalGenius</a></li>
-                    <li><a href="/Main/about.html">About</a></li>
-                    <li><a href="/Main/contact.html">Contact</a></li>
-                </ul>
-            </nav>
-            <button class="mobile-hamburger">
-                <svg width="22px" height="22px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="#CCCCCC" stroke-width="0.384"></g><g id="SVGRepo_iconCarrier"> <path d="M4 18L20 18" stroke="#fff" stroke-width="2" stroke-linecap="round"></path> <path d="M4 12L20 12" stroke="#fff" stroke-width="2" stroke-linecap="round"></path> <path d="M4 6L20 6" stroke="#bdbdc0" stroke-width="2" stroke-linecap="round"></path> </g></svg>                
-            </button>
+        <!--Mobile Navigation Start-->
+        <div class="main-mobile-nav">
+            <div class="hero-main mobile-nav">
+                <a href="index.html"><img src="/Public/logo-white.png" alt="AImaginary logo"></a>
+                <button class="mobile-hamburger" onclick="handleMobileNavLinks()">
+                    <svg width="22px" height="22px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="#CCCCCC" stroke-width="0.384"></g><g id="SVGRepo_iconCarrier"> <path d="M4 18L20 18" stroke="#fff" stroke-width="2" stroke-linecap="round"></path> <path d="M4 12L20 12" stroke="#fff" stroke-width="2" stroke-linecap="round"></path> <path d="M4 6L20 6" stroke="#bdbdc0" stroke-width="2" stroke-linecap="round"></path> </g></svg>                
+                </button>     
+            </div>
+             
+            <div class="mobile-links-container" id="mobile-links-container">
+                <a href="/Main/automator.html">Automator</a>
+                <a href="/Main/manipulator.html">Manipulator</a>
+                <a href="/Main/verbalGenius.html">VerbalGenius</a>
+                <a href="/Main/about.html">About</a>
+                <a href="/Main/contact.html">Contact</a>               
+            </div>  
         </div>
-        
+        <!--Mobile Navigation End-->
+
+        <!--Hero start-->
         <div class="hero-container">
             <h1 class="hero-title">AI Tools <br /> from the future.</h1>
             <p class="paragraph">Unleash your creativity with AImaginary's <br /> Super AI design tools.</p>
             <button class="button-main"> <img src="/AImaginary/Public/logo-white.png" alt="">Get started</button>
-            
-            <spline-viewer url="https://prod.spline.design/t4ZXlS5XfaGsabhS/scene.splinecode"></spline-viewer>
-            
+            <spline-viewer url="https://prod.spline.design/t4ZXlS5XfaGsabhS/scene.splinecode"></spline-viewer>          
         </div>
+        <!--Hero End-->
     </div>
+    <!--Hero Section End-->
     
-    <main class="margin-vertical">
+    <main>
         
         <section>
             

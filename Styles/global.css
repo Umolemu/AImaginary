@@ -1,35 +1,34 @@
-@import url('satoshi.css');
+@import url('/Styles/satoshi.css');
 
 html {
     height: 100%;
     width: 100%;
     background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+    overflow-x: hidden;
 }
+
 body {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     font-family: 'Satoshi-light', sans-serif;
-    position: relative; 
+    position: relative;
+    max-width: 1536px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px; 
 }
 
 a { text-decoration: none;  }
 li { list-style: none; }
 
-main, footer {
-    max-width: 1536px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 20px;
-    padding-right: 20px;
-}
 
 main, section {
     display: flex;
     flex-direction: column;
     align-items: center;
-    z-index: 20;
-    
+    z-index: 20;  
 }
 
 .margin-vertical {
@@ -40,13 +39,11 @@ main, section {
     margin-top: 8rem;
 }
 
+
 spline-viewer {
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    bottom: 28%;
     z-index: -1;
-}
+    margin-top: 2rem;
+ }
 
 .hero-title {
     font-size: 80px;
@@ -104,6 +101,7 @@ spline-viewer {
     padding: 20px;
     font-weight: 500;
     transition: color .2s;
+    
 }
 
 .nav nav ul li a:hover {
@@ -115,6 +113,10 @@ spline-viewer {
 }
 
 .mobile-nav {
+    display: none;
+}
+
+.mobile-links-container {
     display: none;
 }
 
@@ -206,6 +208,7 @@ h3 {
     text-align: center;
     color: #fff;
     font-family: 'Satoshi-Black', sans-serif;
+
 }
 
 .paragraph {
@@ -291,6 +294,90 @@ h3 {
     grid-column-gap: 20px;
     grid-row-gap: 20px;
     
+}
+
+.form-container {
+    z-index: 2;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    grid-template-rows: repeat(4, auto);
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-columns: 1fr;
+    padding-top: 56px;
+    display: grid;
+    position: relative;
+    height: fit-content;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    width: 100%;
+    
+}
+
+.form-baby-node {
+    grid-area: span 1 / span 2 / span 1 / span 2;
+}
+
+.form-large-node {
+    grid-area: span 1 / span 4 / span 1 / span 4;
+}
+
+
+.form-container input {
+    font-size: 16px;
+    font-family: 'Satoshi-light', sans-serif;
+    color: #fff;
+    backdrop-filter: blur(10px);
+    border: 1px solid #FFFFFF14;
+    border-radius: 32px;
+    padding: 20px 30px;
+    background-color: rgba(0, 0, 0, .1);
+    gap: 30px;
+    margin: 10px;
+    height: 30px;
+}
+
+.form-container input:hover, .form-container input:focus, .form-container textarea {
+    outline: none;
+} 
+
+.form-container textarea {
+    font-size: 16px;
+    font-family: 'Satoshi-light', sans-serif;
+    color: #fff;
+    backdrop-filter: blur(10px);
+    border: 1px solid #FFFFFF14;
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, .1);
+    resize: none;
+    overflow-y: hidden; 
+    padding: 20px 30px;
+    height: 75px;
+}
+
+.form-container .form-button {
+    font-size: 15px;
+    font-family: 'Satoshi-light', sans-serif;
+    color: #fff;
+    align-items: center;
+    backdrop-filter: blur(16px);
+    border: 1px solid #FFFFFF14;
+    border-radius: 32px;
+    padding: 20px 30px;
+    background-color: rgba(0, 0, 0, .1);
+    cursor: pointer;
+    transform: matrix(1, 0, 0, 1, 0, 0);
+    transform-style: preserve-3d;
+    transition-behavior: normal;
+    transition-delay: 0s;
+    transition-duration: 0.2s;
+    transition-property: border-color;
+    transition-timing-function: ease;
+    width: fit-content;
+    
+}
+
+.form-container .form-button:hover {
+    border-color: #818182;
 }
 
 footer {
@@ -396,9 +483,33 @@ footer .products-container a:hover {
         right: 0;
         z-index: 100;   
     }
-
-    .mobile-nav ul li {
+    
+    .mobile-links-container {
+        position: fixed;
+        z-index: 100;
+        background-color: hsla(0, 0%, 100%, 0.08);
+        border: 1px solid #FFFFFF14;
+        padding: 30px 30px;
+        border-radius: 20px;
+        backdrop-filter: blur(8px);
         display: none;
+        flex-direction: column;
+        gap: 15px;      
+    }
+
+    .mobile-links-container.show {
+        display: flex;
+    }
+    
+    .mobile-links-container a {
+        font-family: 'Satoshi-light', sans-serif;
+        font-size: 15px;
+        color: #969696;
+        transition: color .2s;
+    }
+
+    .mobile-links-container a:hover {
+        color: #a9a9a9;
     }
 
     .mobile-nav img {
@@ -420,10 +531,7 @@ footer .products-container a:hover {
         margin-top: 4rem;
     }
 
-    spline-viewer {
-        bottom: 38%;
-    }
-
+    
     .grid-container {
         display: flex;
         flex-wrap: wrap;
@@ -443,11 +551,4 @@ footer .products-container a:hover {
 
 }
 
-
-@media only screen and (max-width: 624px) {
-    spline-viewer {
-        bottom: 40%;
-    }
-}
-  
 
