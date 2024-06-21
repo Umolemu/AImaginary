@@ -1,0 +1,316 @@
+<!--
+Webpage can be located at https://umolemu.github.io/AImaginary/ the site is live and running
+
+All the html files are linked to the main page and can be accessed from the main page which are all located under the main folder
+
+The public folder contains all the images used in the website
+
+And the styles folder contains all the css files used in the website
+
+Font used: Satoshi and sans-serif
+
+website inspired by Diagram.com
+
+Created as part of a Varsity based project for a Web development
+
+As part of the project the following tools were used:
+- HTML
+- CSS
+- Spline for the 3D animation
+
+Github link: https://github.com/Umolemu/AImaginary
+The repository contains all the files used to create the website and is public
+
+3D Assets 
+https://app.spline.design/community/file/bfa41777-d0c8-4c0c-b692-088bf402254b 
+https://app.spline.design/community/file/c9046c9c-50dd-47ab-9b9f-efd613dc7002
+
+This website is a mockup and is not intended for commercial use rather as a learning tool and to complete the 
+project requirements for the Web development module at IIE MSA
+
+Currently this is one of my top designed websites and I am proud of the work I have done on it
+
+This website took me about 1 week to complete
+
+As for the last part of the website stay tuned for the javascript as this part only requred HTML and CSS 
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=designed, initial-scale=1.0" />
+    <meta name="description" content="Developer AI tools" />
+    <title>AImaginary | Automator</title>
+    <link rel="icon" href="/AImaginary/public/logo-white.png" />
+    <link rel="stylesheet" href="/AImaginary/global.css" />
+    <link rel="stylesheet" href="/AImaginary/styles/backround.css" />
+  </head>
+
+  <body>
+    <div class="background">
+      <div id="stars"></div>
+      <div id="stars2"></div>
+      <div id="stars3"></div>
+    </div>
+
+    <div class="hero-main">
+      <div class="hero-main nav">
+        <a href="/AImaginary/index.html"
+          ><img
+            src="/AImaginary/public/logo-full-white.png"
+            alt="AImaginary logo"
+        /></a>
+        <nav>
+          <ul>
+            <li><a href="/AImaginary/automator.html">Automator</a></li>
+            <li><a href="/AImaginary/manipulator.html">Manipulator</a></li>
+            <li><a href="/AImaginary/verbalGenius.html">VerbalGenius</a></li>
+            <li><a href="/AImaginary/about.html">About</a></li>
+            <li><a href="/AImaginary/contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="main-mobile-nav">
+        <div class="hero-main mobile-nav">
+          <a href="/AImaginary/index.html"
+            ><img src="/AImaginary/public/logo-white.png" alt="AImaginary logo"
+          /></a>
+          <button class="mobile-hamburger" onclick="handleMobileNavLinks()">
+            <svg
+              width="22px"
+              height="22px"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+              <g
+                id="SVGRepo_tracerCarrier"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke="#CCCCCC"
+                stroke-width="0.384"
+              ></g>
+              <g id="SVGRepo_iconCarrier">
+                <path
+                  d="M4 18L20 18"
+                  stroke="#fff"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                ></path>
+                <path
+                  d="M4 12L20 12"
+                  stroke="#fff"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                ></path>
+                <path
+                  d="M4 6L20 6"
+                  stroke="#bdbdc0"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                ></path>
+              </g>
+            </svg>
+          </button>
+        </div>
+
+        <div class="mobile-links-container" id="mobile-links-container">
+          <a href="/AImaginary/automator.html">Automator</a>
+          <a href="/AImaginary/manipulator.html">Manipulator</a>
+          <a href="/AImaginary/verbalGenius.html">VerbalGenius</a>
+          <a href="/AImaginary/about.html">About</a>
+          <a href="/AImaginary/contact.html">Contact</a>
+        </div>
+      </div>
+
+      <div class="hero-container">
+        <h1 class="hero-title">
+          AI Tools <br />
+          from the future.
+        </h1>
+        <p class="paragraph">
+          Unleash your creativity with AImaginary's <br />
+          Super AI design tools.
+        </p>
+        <button class="button-main">
+          <img src="/AImaginary/public/logo-white.png" alt="" />Get started
+        </button>
+      </div>
+    </div>
+
+    <main>
+      <div class="grid-container">
+        <div class="card large-node">
+          <div class="card-info">
+            <div class="card-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="size-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M21.75 6.75a4.5 4.5 0 0 1-4.884 4.484c-1.076-.091-2.264.071-2.95.904l-7.152 8.684a2.548 2.548 0 1 1-3.586-3.586l8.684-7.152c.833-.686.995-1.874.904-2.95a4.5 4.5 0 0 1 6.336-4.486l-3.276 3.276a3.004 3.004 0 0 0 2.25 2.25l3.276-3.276c.256.565.398 1.192.398 1.852Z"
+                />
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M4.867 19.125h.008v.008h-.008v-.008Z"
+                />
+              </svg>
+            </div>
+            <h3 class="card-heading">Automate your workflow using AI.</h3>
+            <p class="card-paragraph">
+              Automator is an integrated work tool that auto completes your code
+              snipets
+            </p>
+          </div>
+        </div>
+
+        <div class="card large-node">
+          <div class="card-info">
+            <div class="card-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="size-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M20.25 8.511c.884.284 1.5 1.128 1.5 2.097v4.286c0 1.136-.847 2.1-1.98 2.193-.34.027-.68.052-1.02.072v3.091l-3-3c-1.354 0-2.694-.055-4.02-.163a2.115 2.115 0 0 1-.825-.242m9.345-8.334a2.126 2.126 0 0 0-.476-.095 48.64 48.64 0 0 0-8.048 0c-1.131.094-1.976 1.057-1.976 2.192v4.286c0 .837.46 1.58 1.155 1.951m9.345-8.334V6.637c0-1.621-1.152-3.026-2.76-3.235A48.455 48.455 0 0 0 11.25 3c-2.115 0-4.198.137-6.24.402-1.608.209-2.76 1.614-2.76 3.235v6.226c0 1.621 1.152 3.026 2.76 3.235.577.075 1.157.14 1.74.194V21l4.155-4.155"
+                />
+              </svg>
+            </div>
+            <h3 class="card-heading">
+              Chat with the AI about your codebase to improve efficiency and
+              readability
+            </h3>
+            <p class="card-paragraph">
+              Whether you're troubleshooting a glitch or brainstorming feature,
+              turn to Automator for assistance.
+            </p>
+          </div>
+        </div>
+
+        <div class="card baby-node">
+          <div class="card-info">
+            <div class="card-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="size-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z"
+                />
+              </svg>
+            </div>
+            <h3 class="card-heading">Designed by the best AI leaders</h3>
+            <p class="card-paragraph">Code with confidence</p>
+          </div>
+        </div>
+
+        <div class="card baby-node">
+          <div class="card-info">
+            <div class="card-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="size-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M18 18.72a9.094 9.094 0 0 0 3.741-.479 3 3 0 0 0-4.682-2.72m.94 3.198.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0 1 12 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 0 1 6 18.719m12 0a5.971 5.971 0 0 0-.941-3.197m0 0A5.995 5.995 0 0 0 12 12.75a5.995 5.995 0 0 0-5.058 2.772m0 0a3 3 0 0 0-4.681 2.72 8.986 8.986 0 0 0 3.74.477m.94-3.197a5.971 5.971 0 0 0-.94 3.197M15 6.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Zm6 3a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Zm-13.5 0a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Z"
+                />
+              </svg>
+            </div>
+            <h3 class="card-heading">Develop with confidence</h3>
+            <p class="card-paragraph">
+              It's like having a team of developers with you.
+            </p>
+          </div>
+        </div>
+
+        <div class="card large-node">
+          <div class="card-info">
+            <div class="card-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="size-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 5.25h.008v.008H12v-.008Z"
+                />
+              </svg>
+            </div>
+            <h3 class="card-heading">
+              Chat with the AI about your codebase to imporve efficiency and
+              readibility
+            </h3>
+            <p class="card-paragraph">
+              Imporve code efficiency, optimisation and performance with
+              Automator
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div>
+        <img
+          src="/AImaginary/public/logo-full-white.png"
+          alt="AImaginary's Logo"
+          style="width: 140px"
+        />
+        <p class="paragraph-bold-footer">AI Tools from from the future</p>
+        <button class="button-main">Get started now</button>
+      </div>
+
+      <div>
+        <h4 class="footer-heading">Products</h4>
+        <div class="products-container">
+          <a href="/AImaginary/automator.html">Automator</a>
+          <a href="/AImaginary/manipulator.html">Manipulator</a>
+          <a href="/AImaginary/verbalGenius.html">VerbalGenius</a>
+        </div>
+      </div>
+
+      <div>
+        <h4 class="footer-heading">Company</h4>
+        <div class="products-container">
+          <a href="/AImaginary/about.html">About</a>
+          <a href="/AImaginary/contact.html">Contact</a>
+        </div>
+      </div>
+    </footer>
+    <script src="/AImaginary/script.js"></script>
+  </body>
+</html>
