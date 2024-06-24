@@ -45,27 +45,37 @@ function validateForm() {
         return false;
     }
 
+    if (!validatePhoneNumber(number)) {
+        alert('Please enter a valid phone number thats 10 digits!');
+        return false;
+    }
+
     return true;
 }
 
-//Method to validate the email address
+//function to validate the email address
 function validateEmail(email) {
     const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     return re.test(String(email).toLowerCase());
 }
 
+//function to validate the phone number
+function validatePhoneNumber(number) {
+    const re = /^\d{10}$/;
+        return re.test(number);
+}
 
-//Event listenr to submit the form and clear the inputs   
-document.querySelector('.form-button').addEventListener('click', function(event) {
-    
-    //Prevent the page reload when subbmiting the form
-    event.preventDefault();
+//Event listener to submit the form and clear the inputs 
+document.addEventListener('DOMContentLoaded', function() {  
+    document.querySelector('.form-button').addEventListener('click', function(event) {
+        
+        //Prevent the page reload when subbmiting the form
+        event.preventDefault();
 
-    if (validateForm()) {
-        clearInputs();
-        alert('Thank you for your message! We will get back to you soon.');      
-    }
+        if (validateForm()) {
+            clearInputs();
+            alert('Thank you for your message! We will get back to you soon.');      
+        }
 
+    });
 });
-
-
